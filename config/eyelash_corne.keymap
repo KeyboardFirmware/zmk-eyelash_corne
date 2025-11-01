@@ -87,10 +87,10 @@
 
         admin {
             bindings = <
-&bootloader  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_EFF                   &trans          &none   &none   &none   &none  &none  &bootloader
-&sys_reset   &none  &none  &none            &none                           &none                     &trans  &trans  &trans  &none   &none   &none   &none  &none  &sys_reset
-&none        &none  &none  &bt BT_CLR_ALL   &bt BT_SEL 1                    &bt BT_SEL 2     &none            &trans          &none   &none   &none   &none  &none  &none
-                           &trans           &trans                          &trans                                            &trans  &trans  &trans
+&bootloader  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_EFF                   &trans          &none         &none         &none           &none  &none  &bootloader
+&sys_reset   &none  &none  &none            &none                           &none                     &trans  &trans  &trans  &none         &none         &none           &none  &none  &sys_reset
+&none        &none  &none  &bt BT_CLR_ALL   &bt BT_SEL 1                    &bt BT_SEL 2     &none            &trans          &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_CLR_ALL  &none  &none  &none
+                           &trans           &trans                          &trans                                            &trans        &trans        &trans
             >;
         };
     };
