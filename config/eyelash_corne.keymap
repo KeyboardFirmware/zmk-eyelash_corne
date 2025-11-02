@@ -58,8 +58,8 @@
             bindings = <
 &kp ESCAPE  &kp Q  &kp W               &kp E           &kp R             &kp T                             &kp UP                &kp Y      &kp U              &kp I            &kp O                &kp P          &kp BACKSPACE
 &kp GRAVE   &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LGUI    &kp Z  &kp X               &kp C           &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M              &kp COMMA        &kp DOT              &kp FSLH       &kp BSLH
-                                       &mo 1           &mo 2             &kp ENTER                                               &kp SPACE  &kp TAB            &mo 3
+&mo 3       &kp Z  &kp X               &kp C           &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M              &kp COMMA        &kp DOT              &kp FSLH       &mo 3
+                                       &mo 2           &kp TAB           &kp SPACE                                               &kp ENTER  &kp RIGHT_GUI      &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -85,10 +85,10 @@
 
         admin {
             bindings = <
-&bootloader  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_EFF                   &trans          &none         &none         &none           &none  &none  &bootloader
-&sys_reset   &none  &none  &none            &none                           &none                     &trans  &trans  &trans  &none         &none         &none           &none  &none  &sys_reset
-&none        &none  &none  &bt BT_CLR_ALL   &bt BT_SEL 1                    &bt BT_SEL 2     &none            &trans          &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_CLR_ALL  &none  &none  &none
-                           &trans           &trans                          &trans                                            &trans        &trans        &trans
+&bootloader  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_EFF                   &trans          &none   &none   &none   &none  &none  &bootloader
+&sys_reset   &none  &none  &none            &none                           &none                     &trans  &trans  &trans  &none   &none   &none   &none  &none  &sys_reset
+&none        &none  &none  &bt BT_CLR_ALL   &bt BT_SEL 1                    &bt BT_SEL 2     &none            &trans          &none   &none   &none   &none  &none  &none
+                           &trans           &trans                          &trans                                            &trans  &trans  &trans
             >;
         };
     };
